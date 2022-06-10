@@ -1,0 +1,310 @@
+*{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+hr {
+    border: groove #EAF6F6 1px;
+    border-bottom: none;
+    width: 50%;
+}
+.Krish{
+    height: 100vh;
+    width: 100%;
+    background: url(images/portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:15px;
+    padding-left: 8%;
+    padding-right: 8%; 
+    z-index: 1000;
+}
+.hide{
+    display: none;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+span{
+    color: red;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+@media screen and (max-width: 815px) {
+    nav ul li{
+        padding: 5px 15px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    nav ul li{
+        padding: 0 5px;
+    }
+}
+@media screen and (max-width: 575px) {
+    nav {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .logo{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .logo{
+        display: none;
+    }
+    .hide{
+        display: flex;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav {
+        padding-left:1%;
+        padding-right:1%;
+    }
+    nav ul li{
+        font-size: small;
+    }
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: 0.4s;
+}
+.intro{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color:white;
+    margin: 5px 0 10px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+@media screen and (max-width:850px) {
+h1{
+    font-size: 50px;
+}
+h3{
+    font-size: 35px;
+}
+h4{
+    font-size: 25px;
+}
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    background: url(images/Aboutpic.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-left: 10%;
+    padding-top: 20px;
+}
+.main{
+    width: 100%;
+}
+.about h2{
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.main p{
+    color: rgba(250, 174, 250, 0.8);
+    font-size: 18px;
+    word-wrap: break-word ;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    text-align: justify;
+    padding-right: 5%;
+}
+.main ul li{
+    list-style-type:circle;
+    color: rgba(250, 174, 250, 0.8);
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    
+}
+@media screen and (max-width:850px){
+    .about{
+        padding-left: 5%;
+    }
+    .about h2{
+        font-size: 50px;
+    }
+    .main p{
+        padding-right: 2%;
+    }
+}
+.container{
+
+    background: url(https://c1.wallpaperflare.com/preview/69/504/972/sky-star-space-night-sky.jpg);
+    background-size:cover;
+    background-repeat: repeat-x;
+    background-attachment:fixed;
+    color: white;
+    padding-top: 48px;
+}
+
+.container h2{
+    padding-left: 8%;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.image_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .image_gallery > li {
+    flex-basis: 350px; 
+    cursor: pointer;
+    list-style: none;
+  }
+  
+  .image_gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align:middle;
+    border-radius: 5px;
+  }
+  .image_gallery::after {
+    content: "";
+    flex-basis: 350px;
+  }
+  @media screen and (max-width:850px) {
+    .container h2{
+        font-size: 50px;
+    }
+    .image_gallery li img{
+        width:100%;
+        height: 60%;
+    }
+  }
+.edu
+{
+    background: url(images/education.jpg);
+    background-size:cover;
+    background-repeat: repeat;
+    background-attachment:fixed;
+    color: white;
+    padding-top: 48px;
+    padding-bottom: 58px;
+}
+.edu{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.edu h2{
+    padding-left: 3%;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.school img,
+.college img{
+    float: left;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+}
+.edu h4{
+    font-size: 40px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+}
+.edu p{
+    padding-left: 10px;
+    padding-bottom: 7px;
+    font-size: 25px;
+}
+.performance img{
+    float: right;
+    padding-left:20px;
+    padding-right: 20px;
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+}
+@media screen and (max-width:850px) {
+    .title{
+        font-size: 50px;
+    }
+    .edu h4{
+        font-size: 30px;
+    }
+}
+.contact{
+    background-color: rgb(18, 7, 58);
+    text-align: center;
+    font-size: 20px;
+    color: #EAF6F6;
+}
+.contact h2{
+    padding-top: 38px;
+    padding-bottom: 38px;
+    display: inline-block;
+}
+.social{
+    background-color:rgb(18, 7, 58);
+    display: flex;
+    justify-content:space-evenly ;
+}
+.media
+{
+    width: 100%;
+    height: 48px;
+}
+.copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
